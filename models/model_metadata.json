@@ -1,0 +1,47 @@
+{
+  "best_model": "Random Forest",
+  "feature_columns": [
+    "Engine_Temperature",
+    "Vibration",
+    "Battery_Voltage",
+    "Engine_Load",
+    "RPM",
+    "Oil_Quality_Index",
+    "Mileage_km",
+    "Vehicle_Age_Years",
+    "Temp_Deviation",
+    "Vibration_Severity",
+    "Voltage_Drop",
+    "Load_Temp_Interaction",
+    "Wear_Index",
+    "Oil_Degraded",
+    "High_Vibration_Flag",
+    "Battery_Weak_Flag",
+    "Overheating_Flag"
+  ],
+  "target_column": "Failure_Status",
+  "metrics": {
+    "Decision Tree": {
+      "Accuracy": 0.9416666666666667,
+      "Precision": 0.9093264248704663,
+      "Recall": 0.9093264248704663,
+      "F1_Score": 0.9093264248704663,
+      "ROC_AUC": 0.9751785464220697
+    },
+    "Random Forest": {
+      "Accuracy": 0.9575,
+      "Precision": 0.9396325459317585,
+      "Recall": 0.927461139896373,
+      "F1_Score": 0.9335071707953064,
+      "ROC_AUC": 0.9902420083767234
+    },
+    "XGBoost": {
+      "Accuracy": 0.9541666666666667,
+      "Precision": 0.9413333333333334,
+      "Recall": 0.9145077720207254,
+      "F1_Score": 0.9277266754270697,
+      "ROC_AUC": 0.9889371236521496
+    }
+  },
+  "xgboost_available": true
+}
